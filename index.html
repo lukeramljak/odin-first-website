@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="style.css" rel="stylesheet">
+  <script src="nav.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap"
@@ -15,8 +16,12 @@
 <body>
   <header>
     <a href="#" class="logo">Luminous Lifestyle Co.</a>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
+
     <nav>
-      <ul>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation">
         <li><a href="#">Home</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">About</a></li>
