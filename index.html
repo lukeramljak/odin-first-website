@@ -15,81 +15,90 @@
 </head>
 
 <body>
-  <header>
-    <div>
-      <div>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
         <a href="#" class="logo">Luminous Lifestyle Co.</a>
-        <button class="navbar-toggle">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
           <i class="fas fa-bars"></i>
         </button>
+        <nav class="primary-navigation" id="primary-navigation">
+          <ul class="nav-list" role="list" aria-label="Primary">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
   <main>
 
-    <section>
-      <div>
-        <h1>Welcome to Luminous Lifestyle Co.!</h1>
-        <p>We're a company dedicated to helping people live their best lives by offering a wide range of products and
-          services designed to improve every aspect of your daily routine. Our goal is to provide you with the tools
-          and
-          resources you need to lead a more fulfilling, joyful and luminous life.</p>
-        <button class="btn">Sign Up</button>
-      </div>
-      <div>
-        <img src="./images/kelly-sikkema-raaOq1ZZgnc-unsplash.jpg" alt="">
-      </div>
-    </section>
-
-    <section>
-      <h2>Our Product Line</h2>
-      <div>
-        <div>
-          <img src="./images/yoga-mat.jpg" alt="bare feet on a mint green yoga mat">
-          <p>Eco-friendly yoga mat for all levels. Perfect grip, sustainable materials.</p>
-        </div>
-
-        <div>
-          <img src="./images/diffuser.jpg" alt="blue diffuser on the corner of a table">
-          <p>Elegant essential oil diffuser adds luxury to any room.</p>
-        </div>
-
-        <div>
-          <img src="./images/bottle.jpg"
-            alt="person filling up a navy water bottle from a kitchen sink with fruit in the foreground">
-          <p>Smart water bottle tracks and reminds you to stay hydrated.</p>
-        </div>
-
-        <div>
-          <img src="./images/cushion.jpg"
-            alt="circular terracotta coloured cushion sitting on the corner of a large rectangular cushion with a darker shade">
-          <p>Meditation cushion set for comfort and support during mindfulness.</p>
+    <section class="bg-primary-400">
+      <div class="container">
+        <div class="even-columns">
+          <div class="hero">
+            <h1>Welcome to Luminous Lifestyle Co.!</h1>
+            <p>We're a company dedicated to helping people live their best lives by offering a wide range of products
+              and
+              services designed to improve every aspect of your daily routine. Our goal is to provide you with the tools
+              and
+              resources you need to lead a more fulfilling, joyful and luminous life.</p>
+            <button class="button">Sign Up</button>
+          </div>
+          <div>
+            <img src="./images/kelly-sikkema-raaOq1ZZgnc-unsplash.jpg" alt="">
+          </div>
         </div>
       </div>
     </section>
 
     <section>
-      <blockquote>
-        Luminous Lifestyle Co. has changed my life for the better. Their products are top-notch and their services are
-        truly life-enhancing. I'm so grateful to be a part of this community!</blockquote>
-      <p>-Sarah W</p>
+      <div class="container">
+        <h2>Our Product Line</h2>
+        <div>
+          <div>
+            <img src="./images/yoga-mat.jpg" alt="bare feet on a mint green yoga mat">
+            <p>Eco-friendly yoga mat for all levels. Perfect grip, sustainable materials.</p>
+          </div>
+
+          <div>
+            <img src="./images/diffuser.jpg" alt="blue diffuser on the corner of a table">
+            <p>Elegant essential oil diffuser adds luxury to any room.</p>
+          </div>
+
+          <div>
+            <img src="./images/bottle.jpg"
+              alt="person filling up a navy water bottle from a kitchen sink with fruit in the foreground">
+            <p>Smart water bottle tracks and reminds you to stay hydrated.</p>
+          </div>
+
+          <div>
+            <img src="./images/cushion.jpg"
+              alt="circular terracotta coloured cushion sitting on the corner of a large rectangular cushion with a darker shade">
+            <p>Meditation cushion set for comfort and support during mindfulness.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section>
-      <div>
+      <div class="container">
+        <blockquote>
+          Luminous Lifestyle Co. has changed my life for the better. Their products are top-notch and their services are
+          truly life-enhancing. I'm so grateful to be a part of this community!</blockquote>
+        <p>-Sarah W</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
         <div>
           <span>Join the Luminous Lifestyle Movement</span>
           <p>Embrace a healthier, happier, and more fulfilling life today!</p>
         </div>
-        <button class="btn btn-inverse">Sign Up</button>
+        <button class="button" data-type="border">Sign Up</button>
       </div>
     </section>
 
